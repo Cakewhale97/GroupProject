@@ -2,9 +2,8 @@
 
 Frontend Gang
 
-<<<<<<< HEAD
 Marlene
-=======
+
 Robert Tyborn är här
 
 Marlene

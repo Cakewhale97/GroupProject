@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Menu() {
+export default function Menu() {
   return (
-    <div>Menu</div>
-  )
+    <div className="Menu">
+      <div className="CartContainer">
+        <Link to="/cart"> 
+          <h1>cart</h1>
+        </Link>
+      </div>
+    </div>
+  );
 }
-
-export default Menu

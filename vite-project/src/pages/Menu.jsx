@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/Menu.css";
+import Products from "../components/Products";
 import { Link } from "react-router-dom";
 
 export default function Menu() {
@@ -9,6 +11,9 @@ export default function Menu() {
           <h1>cart</h1>
         </Link>
       </div>
+      <div>
+        <Products />
+      </div>
     </div>
   );
-  }
+}

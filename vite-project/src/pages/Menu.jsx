@@ -5,10 +5,10 @@ export default function Menu() {
   return (
     <div className="Menu">
       <div className="CartContainer">
-        <Link to="/cart"> 
+        <Link to="/cart">
           <h1>cart</h1>
         </Link>
       </div>
     </div>
   );
-}
+  }

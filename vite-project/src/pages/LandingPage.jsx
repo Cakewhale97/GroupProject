@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function LandingPage() {
+export default function LandingPage() {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -10,9 +10,7 @@ function LandingPage() {
   return (
     <div className="LandingPage" onClick={handleClick}>
       <h1>AIRBEAN</h1>
-      <P>DRONEDELIVERY</P>
+      <p>DRONEDELIVERY</p>
     </div>
   );
 }
-
-export default LandingPage;

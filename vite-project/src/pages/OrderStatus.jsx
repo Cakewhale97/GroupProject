@@ -1,3 +1,4 @@
+import '../styles/OrderStatus.css'
 import React from 'react'
 
 function OrderStatus() {

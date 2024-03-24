@@ -1,5 +1,28 @@
-.Menu {
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+    margin: 0;
+}
+.menu {
     width: 375px;
-    height: 830px;
+    min-height: 667px;
     background-color: #F3E4E1;
+    background-image: url('/src/assets/graphics-header.svg'), url('/src/assets/graphics-footer.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+}
+.menu-title {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    line-height: 27.6px;
+    margin: 10px;
+    color: #2F2926;
+    text-align: center;
+}
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }

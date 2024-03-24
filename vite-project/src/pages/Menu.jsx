@@ -7,9 +7,11 @@ export default function Menu() {
   return (
     <div className="menu">
       <div className="cart-container">
-        <nav>NAV</nav>
+        <div className="nav-container">
+        <img className="nav" src="src/assets/navicon.svg" alt="" />
+        </div>
         <Link to="/cart">
-          <h1 >cart</h1>
+         <div className="cart"></div>
         </Link>
       </div>
       <h1 className="menu-title">Meny</h1>

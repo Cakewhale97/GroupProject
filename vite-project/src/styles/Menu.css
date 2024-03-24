@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 .menu {
-    width: 375px;
+    min-width: 375px;
     min-height: 667px;
     background-color: #F3E4E1;
     background-image: url('/src/assets/graphics-header.svg'), url('/src/assets/graphics-footer.svg');
@@ -21,8 +21,25 @@ body {
     color: #2F2926;
     text-align: center;
 }
+.nav-container {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.nav {
+  width: 25px;
+}
 .cart-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
+}
+.cart {
+    width: 60px;
+    height: 60px;
+    background-image: url("./src/assets/cart.svg");
+    background-position: center;
 }

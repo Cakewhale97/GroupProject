@@ -5,6 +5,7 @@ import Menu from "../pages/Menu";
 import Cart from "../components/Cart";
 import Nav from "../pages/Nav";
 import OrderStatus from "../pages/OrderStatus";
+import About from "../pages/About";
 
 //Define a component for your apps router.
 const AppRouter = () => {
@@ -17,6 +18,7 @@ const AppRouter = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/orderstatus" element={<OrderStatus />} />
         <Route path="/nav" element={<Nav />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );

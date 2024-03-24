@@ -5,12 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function Menu() {
   return (
-    <div className="Menu">
-      <div className="CartContainer">
+    <div className="menu">
+      <div className="cart-container">
+        <nav>NAV</nav>
         <Link to="/cart">
-          <h1>cart</h1>
+          <h1 >cart</h1>
         </Link>
       </div>
+      <h1 className="menu-title">Meny</h1>
       <div>
         <Products />
       </div>

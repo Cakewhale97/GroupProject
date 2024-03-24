@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../Redux/cartSlice";
+import "./Products.css";
 
 export default function Products() {
   const dispatch = useDispatch();
@@ -28,11 +29,14 @@ export default function Products() {
     <div className="Products">
       {coffeeItems.map((item, index) => (
         <div key={index}>
-          <div className="AddBtn">
-            <button onClick={() => handleAddToCart(item)}>+</button>
-          </div>
-          <div>
-            <h1>{item.title}</h1>
+          <div className="products-container">
+            <div className="products-addbtn">
+              <button className="add-btn" onClick={() => handleAddToCart(item)}>+</button>
+            </div>
+            <div className="product-info">
+              <h1 className="product-title">{item.title}</h1>
+              <p className="product-price">{item.price} kr</p>
+            </div>
           </div>
         </div>
       ))}

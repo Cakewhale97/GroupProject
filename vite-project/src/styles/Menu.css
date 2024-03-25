@@ -42,4 +42,13 @@ body {
     height: 60px;
     background-image: url("./src/assets/cart.svg");
     background-position: center;
+   
+}
+
+.cart-length {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 15%;
+    bottom: 15%;
 }

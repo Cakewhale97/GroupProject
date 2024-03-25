@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+    margin: 0;
+}
+
+
+.cart-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.cart {
+    min-width: 375px;
+    min-height: 667px;
+    background-color: #F3E4E1;
+    background-image: url('/src/assets/graphics-header.svg'), url('/src/assets/graphics-footer.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+}
+
+.cart-title {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    line-height: 27.6px;
+    margin: 10px;
+    color: #2F2926;
+    text-align: center;
+}
+
+.nav-container {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    width: 25px;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.cart-icon {
+    width: 60px;
+    height: 60px;
+    background-image: url("./src/assets/cart.svg");
+    background-position: center;
+}
+
+.cart-order{
+    
+    background-color: #fcf9f8;
+}

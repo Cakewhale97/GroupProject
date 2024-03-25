@@ -3,8 +3,8 @@ import Products from "../components/Products";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useState } from "react";
-import Nav from "./Nav";
-
+import Nav from "../pages/Nav";
+<pages></pages>
 export default function Menu() {
   const cartItems = useSelector((state) => state.cart);
 

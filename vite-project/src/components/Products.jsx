@@ -25,20 +25,20 @@ export default function Products() {
       });
   }, []);
 
+
   return (
+
     <div className="Products">
       {coffeeItems.map((item, index) => (
-        <div key={index}>
-          <div className="products-container">
-            <div className="products-addbtn">
-              <button className="add-btn" onClick={() => handleAddToCart(item)}>+</button>
-            </div>
-            <div className="product-info">
-              <h1 className="product-title">{item.title}</h1>
-              <p className="product-description">{item.desc}</p>
-              <p className="product-price">{item.price} kr</p>
-            </div>
+        <div key={index} className="products-container">
+          <div className="products-addbtn">
+            <button className="add-btn" onClick={() => handleAddToCart(item)}>+</button>
           </div>
+          <div className="product-info">
+            <h1 className="product-title">{item.title}</h1>
+            <p className="product-description__text">{item.desc}</p>
+          </div>
+          <p className="product-price">{item.price} kr</p>
         </div>
       ))}
     </div>

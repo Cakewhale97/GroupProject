@@ -22,36 +22,40 @@ body {
   color: #2f2926;
   text-align: center;
 }
-.menu-nav-container {
-  width: 48px;
-  height: 48px;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-}
-.menu-nav {
-  width: 25px;
-}
-.menu-cart-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-}
-.menu-cart {
-  width: 60px;
-  height: 60px;
-  background-image: url("./src/assets/cart.svg");
-  background-position: center;
-}
 
-.menu-cart-length {
-  color: white;
-  font-size: 20px;
-  position: relative;
-  left: 15%;
-  bottom: 15%;
-}
+.menu-nav-container {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .menu-nav {
+    width: 25px;
+  }
+  
+  .menu-cart-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .menu-cart {
+    width: 60px;
+    height: 60px;
+    background-image: url("./src/assets/cart.svg");
+    background-position: center;
+  }
+  
+  .menu-cart-length {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 15%;
+    bottom: 15%;
+  }
+  
+
 
 .nav-menu {
   position: fixed;

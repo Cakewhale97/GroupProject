@@ -13,8 +13,9 @@ export default function Menu() {
           <img className="nav" src="src/assets/navicon.svg" alt="" />
         </div>
         <div className="cart">
-          <p className="cart-length">{cartItems.length}</p>
-          <Link to="/cart"></Link>
+          <Link to="/cart">
+            <p className="cart-length">{cartItems.length}</p>
+          </Link>
         </div>
       </div>
       <h1 className="menu-title">Meny</h1>

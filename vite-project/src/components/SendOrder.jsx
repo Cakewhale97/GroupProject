@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import React from "react";
+import "./SendOrder.css";
 
 function SendOrder() {
   const cartItems = useSelector((state) => state.cart);
@@ -44,9 +45,8 @@ function SendOrder() {
 
   return (
     <>
-      <div>SendOrder</div>
       <button className="sendorder-btn" onClick={handleCLick}>
-        BTN
+        Lägg order!
       </button>
     </>
   );

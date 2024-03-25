@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.sendorder-btn {
+    font-family: "PT Serif", serif;
+    width: 248px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: #2f2926;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    
+}

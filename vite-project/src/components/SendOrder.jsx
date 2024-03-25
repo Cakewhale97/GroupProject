@@ -7,8 +7,8 @@ import React from "react";
 function SendOrder() {
   const cartItems = useSelector((state) => state.cart);
   const navigate = useNavigate();
-  const [orderNr, setOrderNr] = useState(null);
-  const [eta, setEta] = useState(null);
+  const [orderNr, setOrderNr] = useState(null); //Not used right now
+  const [eta, setEta] = useState(null); // Not used right now
   const [isSendingOrder, setIsSendingOrder] = useState(false);
 
   const handleCLick = () => {
@@ -30,9 +30,9 @@ function SendOrder() {
       )
       .then((response) => {
         console.log("Response data:", response.data);
-        setOrderNr(response.data.orderNr);
-        setEta(response.data.eta);
-        navigate("/orderstatus");
+        const { orderNr, eta } = response.data; // Destructure orderNr and eta from response data
+        console.log({ orderNr });
+        navigate("/orderstatus", { state: { orderNr, eta } }); // Pass orderNr and eta directly
       })
       .catch((error) => {
         console.error("Error:", error);

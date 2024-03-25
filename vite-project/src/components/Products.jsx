@@ -35,6 +35,7 @@ export default function Products() {
             </div>
             <div className="product-info">
               <h1 className="product-title">{item.title}</h1>
+              <p className="product-description">{item.desc}</p>
               <p className="product-price">{item.price} kr</p>
             </div>
           </div>

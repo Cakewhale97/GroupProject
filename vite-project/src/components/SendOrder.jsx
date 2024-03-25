@@ -6,12 +6,49 @@ import React from "react";
 
 function SendOrder() {
   const cartItems = useSelector((state) => state.cart);
+  const navigate = useNavigate();
+  const [orderNr, setOrderNr] = useState(null);
+  const [eta, setEta] = useState(null);
+  const [isSendingOrder, setIsSendingOrder] = useState(false);
 
-  return ( 
+  const handleCLick = () => {
+    setIsSendingOrder(true);
+
+    const postData = {
+      details: {
+        order: cartItems.map((item) => ({
+          name: item.title,
+          price: item.price,
+        })),
+      },
+    };
+
+    axios
+      .post(
+        "https://airbean-api-xjlcn.ondigitalocean.app/api/beans/order",
+        postData
+      )
+      .then((response) => {
+        console.log("Response data:", response.data);
+        setOrderNr(response.data.orderNr);
+        setEta(response.data.eta);
+        navigate("/orderstatus");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      })
+      .finally(() => {
+        setIsSendingOrder(false);
+      });
+  };
+
+  return (
     <>
-  <div>SendOrder</div>
-  <button></button>
-  </>
+      <div>SendOrder</div>
+      <button className="sendorder-btn" onClick={handleCLick}>
+        BTN
+      </button>
+    </>
   );
 }
 

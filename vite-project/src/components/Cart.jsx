@@ -10,6 +10,9 @@ export default function Cart() {
     <div className="Products">
       {cartItems.map((item, index) => (
         <div key={index}>
-     
+      
         </div>
       ))}
+    </div>
+  );
+}

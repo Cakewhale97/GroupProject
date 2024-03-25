@@ -15,22 +15,30 @@ export default function Cart() {
           <div className="cart-icon">   </div>
 
         </div>
-        <section className="cart-order">
-          <h1>Min Beställning</h1>
-          <div className="Products">
-            {cartItems.map((item, index) => (
-              <div className='product-info' key={index}>
-                <p className="product-title">{item.title}</p>
-                <p className="product-price">{item.price}kr</p>
-              </div>
-            ))}
-          </div>
-        </section>
-        <section className="cart-total">
-          <p className='cart-total'>Totalt: {cartItems.reduce((total, item) => total + item.price, 0)}kr</p>
-        </section>
-        <SendOrder />
+        <article className='cart-order-main'>
+          <section className="cart-order">
+            <h1 className='cart-order__title'>Min Beställning</h1>
+            <div className="cart-order__products">
+              {cartItems.map((item, index) => (
+                <div className='cart-order__product-info' key={index}>
+                  <p className="product-title">{item.title}</p>
+                  <p className="cart-product-price">{item.price}kr</p>
+                </div>
+              ))}
+            </div>
+          </section>
+          <section className="cart-total">
+
+            <p className='cart-total__title'>Totalt:</p>
+            <div className="dotted-line"></div>
+            <p className='cart-total__sum'>{cartItems.reduce((total, item) => total + item.price, 0)}kr</p>
+
+          </section>
+          <p className='cart-total__text'>inkl moms + drönarleverans</p>
+          <SendOrder />
+        </article>
       </div>
     </div>
+
   );
 }

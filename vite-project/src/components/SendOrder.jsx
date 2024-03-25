@@ -7,8 +7,8 @@ import React from "react";
 function SendOrder() {
   const cartItems = useSelector((state) => state.cart);
   const navigate = useNavigate();
-  const [orderNr, setOrderNr] = useState(null); //Not used right now
-  const [eta, setEta] = useState(null); // Not used right now
+  const [orderNr, setOrderNr] = useState(null); //Not used right now - do we need it even?
+  const [eta, setEta] = useState(null); // Not used right now - do we need it even?
   const [isSendingOrder, setIsSendingOrder] = useState(false);
 
   const handleCLick = () => {

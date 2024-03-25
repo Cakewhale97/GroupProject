@@ -21,7 +21,7 @@ body {
     color: #2F2926;
     text-align: center;
 }
-.nav-container {
+.menu-nav-container {
     width: 48px;
     height: 48px;
     background-color: white;
@@ -29,15 +29,15 @@ body {
     display: flex;
     justify-content: center;
 }
-.nav {
+.menu-nav {
   width: 25px;
 }
-.cart-container {
+.menu-cart-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
-.cart {
+.menu-cart {
     width: 60px;
     height: 60px;
     background-image: url("./src/assets/cart.svg");
@@ -45,7 +45,7 @@ body {
    
 }
 
-.cart-length {
+.menu-cart-length {
     color: white;
     font-size: 20px;
     position: relative;

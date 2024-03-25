@@ -1,6 +1,6 @@
 import './Cart.css'
 import { useSelector } from "react-redux";
-
+import SendOrder from "./SendOrder";
 
 export default function Cart() {
   const cartItems = useSelector((state) => state.cart);
@@ -29,6 +29,7 @@ export default function Cart() {
         <section className="cart-total">
           <p className='cart-total'>Totalt: {cartItems.reduce((total, item) => total + item.price, 0)}kr</p>
         </section>
+        <SendOrder />
       </div>
     </div>
   );

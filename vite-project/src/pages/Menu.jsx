@@ -3,7 +3,7 @@ import Products from "../components/Products";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-export default function Menu({ coffeeItems }) {
+export default function Menu() {
   const cartItems = useSelector((state) => state.cart);
 
   return (

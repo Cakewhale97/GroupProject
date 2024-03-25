@@ -3,6 +3,7 @@
 body {
     margin: 0;
     overflow: scroll;
+    color: #2F2926
 }
 
 .cart-overlay {
@@ -26,8 +27,13 @@ body {
     font-size: 42px;
     line-height: 27.6px;
     margin: 10px;
-    color: #2F2926;
     text-align: center;
+}
+
+.cart-order__title {
+    padding: 2rem 2rem 0rem 2rem;
+    text-align: center;
+
 }
 
 .nav-container {
@@ -46,7 +52,7 @@ body {
 
 .cart-container {
     margin-bottom: 2rem;
-    padding: 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -59,16 +65,79 @@ body {
     background-position: center;
 }
 
-.cart-order {
-
+.cart-order-main {
+    background-color: #fbf8f8;
     font-size: 20px;
-    position: relative;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     left: 15%;
     bottom: 15%;
+    padding: 10px;
+
 }
 
-.cart-total{
-    font-size: 23px;
- 
+.cart-order__products {
+    display: flex;
+    flex-direction: column;
+}
 
+.cart-product-price {
+    padding: 0px 0px 10px 10px;
+    margin: 0;
+    font-size: 12px;
+    font-family: work sans, sans-serif;
+}
+
+.cart-order__product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product-title {
+    display: flex;
+    align-items: last baseline;
+
+}
+
+.product-title::after {
+    content: "";
+    flex-grow: 1;
+    border-bottom: 2px dotted #0000008a;
+    margin-right: 10px;
+}
+
+.cart-total {
+    display: flex;
+}
+
+.cart-total__title {
+    font-weight: 900;
+    font-size: 23px;
+    font-family: "PT Serif", serif;
+    margin-bottom: 0;
+}
+
+.cart-total__sum {
+    font-weight: 900;
+    font-size: 23px;
+    font-family: "PT Serif", serif;
+    margin-bottom: 0;
+}
+
+.dotted-line {
+    border-bottom: 1px dotted #2F2926;
+    content: "";
+    flex-grow: 1;
+    border-bottom: 2px dotted #0000008a;
+    margin-right: 10px;
+
+}
+
+
+.cart-total__text {
+    font-size: 12px;
+    font-family: work sans, sans-serif;
+    margin-top: 5px;
 }

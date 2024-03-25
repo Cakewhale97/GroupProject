@@ -1,3 +1,21 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { UseSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import React from "react";
+
+function SendOrder() {
+  const cartItems = useSelector((state) => state.cart);
+
+  return ( 
+    <>
+  <div>SendOrder</div>
+  <button></button>
+  </>
+  );
+}
+
+export default SendOrder;
 
 // 1. Import the necessary modules from their respective libraries. This includes `axios` for making HTTP requests, `useSelector` from `react-redux` for accessing the Redux store, `useNavigate` from `react-router-dom` for navigation, and `useState` from `react` for local state management.
 

@@ -20,6 +20,7 @@ export default function Menu() {
           />
           {isNavOpen && (
             <div className="nav-menu">
+              <div className="close" onClick={() => setIsNavOpen(false)}>X</div>
               <Link to="/menu" onClick={() => setIsNavOpen(false)}>
                 Meny
               </Link>

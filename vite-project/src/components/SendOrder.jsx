@@ -26,7 +26,9 @@ function SendOrder() {
 
     axios
       .post(
+
         "https://airbean-9pcyw.ondigitalocean.app/api/beans/order",
+
         postData
       )
       .then((response) => {

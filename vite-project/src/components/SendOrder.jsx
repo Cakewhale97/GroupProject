@@ -8,8 +8,6 @@ import "./SendOrder.css";
 function SendOrder() {
   const cartItems = useSelector((state) => state.cart);
   const navigate = useNavigate();
-  const [orderNr, setOrderNr] = useState(null); //Not used right now - do we need it even?
-  const [eta, setEta] = useState(null); // Not used right now - do we need it even?
   const [isSendingOrder, setIsSendingOrder] = useState(false);
 
   const handleCLick = () => {
@@ -35,6 +33,7 @@ function SendOrder() {
         console.log("Response data:", response.data);
         const { orderNr, eta } = response.data; // Destructure orderNr and eta from response data
         console.log({ orderNr });
+        sessionStorage.setItem("orderNr", orderNr);
         navigate("/orderstatus", { state: { orderNr, eta } }); // Pass orderNr and eta directly
       })
       .catch((error) => {

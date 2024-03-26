@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-body {
-    margin: 0;
-    overflow: scroll;
-    color: #2F2926;
-    font-family: "PT Serif", serif;
-    ;
-}
+
 
 .cart {
     min-width: 375px;

@@ -1,0 +1,10 @@
+body {
+    overflow: scroll;
+    color: #2F2926;
+    font-family: "PT Serif", serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #38846D;
+    ;
+}

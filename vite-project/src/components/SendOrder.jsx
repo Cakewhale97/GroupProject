@@ -26,7 +26,7 @@ function SendOrder() {
 
     axios
       .post(
-        " https://airbean-9pcyw.ondigitalocean.app/api/beans/order",
+        "https://airbean-9pcyw.ondigitalocean.app/api/beans/order",
         postData
       )
       .then((response) => {
@@ -45,7 +45,7 @@ function SendOrder() {
 
   return (
     <>
-      <button className="sendorder-btn" onClick={handleCLick}>
+      <button className="sendorder-btn" onClick={handleCLick} disabled={isSendingOrder}>
         Lägg order!
       </button>
     </>

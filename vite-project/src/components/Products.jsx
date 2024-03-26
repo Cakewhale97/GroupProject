@@ -25,14 +25,14 @@ export default function Products() {
       });
   }, []);
 
-
   return (
-
     <div className="Products">
       {coffeeItems.map((item, index) => (
         <div key={index} className="products-container">
           <div className="products-addbtn">
-            <button className="add-btn" onClick={() => handleAddToCart(item)}>+</button>
+            <button className="add-btn" onClick={() => handleAddToCart(item)}>
+              +
+            </button>
           </div>
           <div className="product-info">
             <h1 className="product-title">{item.title}</h1>

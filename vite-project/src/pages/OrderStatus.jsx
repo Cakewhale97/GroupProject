@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import axios from "axios";
 import droneImage from "../assets/drone.svg";
 
-
 const OrderStatus = () => {
   const location = useLocation();
   const { orderNr } = location.state;
@@ -27,14 +26,23 @@ const OrderStatus = () => {
 
   return (
     <div className="status">
-      <p>Your Order number is {orderNr}</p>
-      <img src={droneImage} alt="" className="drone"/>
+      <div className="status-order">
+        <p>
+          Ordernummer <span className="orderNr">#{orderNr}</span>{" "}
+        </p>
+      </div>
 
-      {eta ? (
-        <p> Your order will be ready in {eta} minutes </p>
-      ) : (
-        <p>Fetching order status...</p>
-      )}
+      <img src={droneImage} alt="" className="drone" />
+      <div className="status-eta">
+        {eta ? (
+          <h2>
+            Din beställning <br /> är på väg! <br />{" "}
+            <span className="eta"> {eta} minuter</span>
+          </h2>
+        ) : (
+          <p>Din beställning är på väg {eta}</p>
+        )}
+      </div>
     </div>
   );
 };

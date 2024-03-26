@@ -1,11 +1,48 @@
-body {
-    width: 100vw;
-    height: 100vh;
+
+
+.status {
     background-color: #E5674E;
-  
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-order {
+    margin-top: 6em;
+    margin-bottom: 1em;
+    font-size: 16px;
+    font-family: Work Sans;
+    color: #fff;
+}
+
+.orderNr {
+    font-weight: 700;
+
 }
 
 .drone {
-    width: 100px;
-    height: 100px;
+    width: 230px;
+    object-fit: contain;
+    margin-bottom: 4em;
+    
+}
+
+.status-eta {
+    font-family: PT Serif;
+    font-size: 26px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.eta {
+    font-size: 22px;
+    display: block;
+    margin: 15px;
+    font-weight: 400;
 }

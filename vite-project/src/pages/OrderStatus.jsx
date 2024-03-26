@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import droneImage from "../assets/drone.svg";
+import loaderSvg from "../assets/loader.png";
 
 const OrderStatus = () => {
   const location = useLocation();
@@ -40,8 +41,11 @@ const OrderStatus = () => {
             <span className="eta"> {eta} minuter</span>
           </h2>
         ) : (
-          <p>Din beställning är på väg {eta}</p>
+          <p>Loading... <br /><img src={loaderSvg} alt="..Loading" className="loader" /></p>
         )}
+      </div>
+      <div className="status-btn">
+        <button>Ok, cool!</button>
       </div>
     </div>
   );

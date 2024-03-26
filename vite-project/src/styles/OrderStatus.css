@@ -50,4 +50,18 @@
 
 .status-btn {
   margin-top: 6em;
+
+  button {
+    width: 184px;
+    height: 55px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: none;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: PT Serif;
+
+
+
+  }
 }

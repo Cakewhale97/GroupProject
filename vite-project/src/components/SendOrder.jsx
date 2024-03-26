@@ -45,7 +45,7 @@ function SendOrder() {
 
   return (
     <>
-      <button className="sendorder-btn" onClick={handleCLick}>
+      <button className="sendorder-btn" onClick={handleCLick} disabled={isSendingOrder}>
         Lägg order!
       </button>
     </>

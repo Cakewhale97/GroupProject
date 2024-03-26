@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    margin: 0;
+}
+
+.aboutWrapper {
+    min-width: 375px;
+    min-height: 667px;
+    background-color: #f3e4e1;
+    background-image: url('/src/assets/graphics-header.svg'),
+        url('/src/assets/graphics-footer.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    padding: 20px;
+
+    & main {
+        padding: 15px;
+
+        & .about__heading {
+            font-family: Fira Sans;
+            font-size: 42px;
+            margin-top: 65px;
+        }
+
+        & .about__text {
+            font-family: Work Sans;
+            line-height: 22.4px;
+            font-size: 12px;
+        }
+
+        & #boldText {
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+
+    & .evaCortado-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+        margin-top: 20px;
+
+        & .evaPicture {
+            height: 74px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        & h3 {
+            margin: 0px;
+            font-family: Fira Sans;
+        }
+
+        & p {
+            margin: 0;
+            font-size: 12px;
+            font-family: Work Sans;
+        }
+    }
+}

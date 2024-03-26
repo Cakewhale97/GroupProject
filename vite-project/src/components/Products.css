@@ -1,0 +1,60 @@
+.add-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #2F2926;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-family: "PT Serif", serif;
+  line-height: 32px;
+  text-align: center;
+  border: none;
+}
+
+.products-container {
+  display: flex;
+  margin: 2rem 3rem 0rem 3rem;
+  align-items: center;
+}
+
+.products-addbtn {
+  margin-right: 1rem;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-title {
+  margin-bottom: -0.5rem;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2F2926;
+  font-size: 23px;
+}
+
+.product-title::after {
+  content: "";
+  flex-grow: 1;
+  border-bottom: 2px dotted rgba(22, 21, 21, 0.54);
+}
+
+
+.product-description__text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #2F2926;
+}
+
+.product-price {
+  font-family: "PT Serif", serif;
+  font-size: 1rem;
+  color: #2F2926;
+  margin-left: auto;
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 0;
+}

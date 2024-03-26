@@ -1,3 +1,4 @@
+import '../styles/LandingPage.css'
 import { useNavigate } from "react-router-dom";
 
 export default function LandingPage() {
@@ -8,9 +9,14 @@ export default function LandingPage() {
   };
 
   return (
+    <main className='landing-main'>
     <div className="LandingPage" onClick={handleClick}>
-      <h1>AIRBEAN</h1>
-      <p>DRONEDELIVERY</p>
+        <div className='landing-images'>
+        <img src="src/assets/intro-graphic-left.svg" alt="" />
+        <img className='landing-images-right' src="src/assets/intro-graphic-right.svg" alt="" />
+      <h1></h1>
+      </div>
     </div>
+    </main>
   );
 }

@@ -1,3 +1,7 @@
+.Products {
+  padding-bottom: 100px;
+}
+
 .add-btn {
   width: 32px;
   height: 32px;
@@ -13,7 +17,7 @@
 
 .products-container {
   display: flex;
-  margin: 2rem 3rem 0rem 3rem;
+  margin: 0.3rem 2rem 0rem 2rem;
   align-items: center;
 }
 
@@ -34,12 +38,20 @@
   font-size: 1.2rem;
   color: #2F2926;
   font-size: 23px;
+  position: relative;
 }
 
 .product-title::after {
   content: "";
-  flex-grow: 1;
-  border-bottom: 2px dotted rgba(22, 21, 21, 0.54);
+  display: block;
+  position: absolute;
+  top: 66%;
+  right: 0;
+  transform: translateY(-1%);
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px dotted #0000004d;
+
 }
 
 
@@ -53,7 +65,7 @@
   font-family: "PT Serif", serif;
   font-size: 1rem;
   color: #2F2926;
-  margin-left: auto;
+
   font-size: 23px;
   font-weight: 700;
   margin-top: 0;

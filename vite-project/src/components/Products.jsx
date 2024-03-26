@@ -15,7 +15,7 @@ export default function Products() {
 
   useEffect(() => {
     axios
-      .get("https://airbean-api-xjlcn.ondigitalocean.app/api/beans/")
+      .get("https://airbean-9pcyw.ondigitalocean.app/api/beans/")
       .then((res) => {
         setCoffeeItems(res.data.menu);
         console.log(res.data.menu);
@@ -44,3 +44,4 @@ export default function Products() {
     </div>
   );
 }
+

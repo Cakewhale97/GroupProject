@@ -1,14 +1,10 @@
 * {
     box-sizing: border-box;
   }
-body {
-    margin: 0;
-    background-color: #38846d;
-}  
+
 .landing-main {
     min-width: 375px;
     min-height: 500px;
-   
     background-image: url("src/assets/airbean-landing.svg");
     background-repeat:no-repeat;
     background-position: center center;

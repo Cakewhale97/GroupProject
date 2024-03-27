@@ -9,6 +9,7 @@
     background-image: url('/src/assets/graphics-header.svg'), url('/src/assets/graphics-footer.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: top center, bottom center;
+    padding-bottom: 20%;
 }
 
 .cart-title {
@@ -104,6 +105,23 @@
     margin-right: 10px;
 }
 
+
+.cart-remove-btn{
+    font-family: "PT Serif", serif;
+    width: 248px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: #2f2926;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    justify-self: center;
+    margin-bottom: 40px;
+    
+    
+
+}
 .cart-total {
     display: flex;
     align-items: baseline

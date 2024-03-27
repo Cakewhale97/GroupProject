@@ -1,14 +1,21 @@
 import "./Cart.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import SendOrder from "./SendOrder";
 import Nav from "../pages/Nav";
+import { removeFromCart } from "../Redux/cartSlice";
 
-export default function Cart() {
+
+ export default function Cart() {
   const cartItems = useSelector((state) => state.cart);
   console.log("cart items", cartItems);
 
+const dispatch = useDispatch();
+  const handleRemoveFromCart = (id) => {
+    dispatch(removeFromCart({id: id}));
+  };
+
   return (
-    <div className="cart-overlay">
+  
       <div className="cart">
         <div className="cart-container">
           <div className="nav-container">
@@ -22,10 +29,15 @@ export default function Cart() {
             <div className="cart-order__products">
               {cartItems.map((item, index) => (
                 <div className="cart-order__product-info" key={index}>
-                  <p className="cart-product-title">{item.title}</p>
-                  <p className="cart-product-price">{item.price}kr</p>
-                </div>
+    <div className="cart-product-details">
+        <div className="cart-product-title">{item.title}</div>
+        <div className="cart-product-price">{item.price}kr</div>
+    </div>
+
+    <button className="cart-remove-btn" onClick={() => handleRemoveFromCart(item.id)}>Ta bort</button>
+</div>
               ))}
+              
             </div>
           </section>
           <section className="cart-total">
@@ -39,6 +51,6 @@ export default function Cart() {
           <SendOrder />
         </article>
       </div>
-    </div>
+  
   );
 }

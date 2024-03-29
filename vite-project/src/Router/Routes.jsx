@@ -7,10 +7,8 @@ import Nav from "../pages/Nav";
 import OrderStatus from "../pages/OrderStatus";
 import About from "../pages/About";
 
-//Define a component for your apps router.
 const AppRouter = () => {
   return (
-    // Wrap eveything in a Router component.  This sets up the context for routing.
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
